@@ -44826,22 +44826,3 @@ Reasonix employs the **Strategy Design Pattern** — each reasoner is a pluggabl
 
 ### 3. 🔹 Chain-of-Thought (CoT)
 **How it works:** Prompts the LLM to "think step by step".  
-**Best for:** Open-ended analysis where reasoning flow matters.  
-**File:** `backend/reasoning/chain_of_thought_reasoner.py`
-
-### 4. 🔹 ReAct (Reason + Act)
-**How it works:** Iteratively reasons, acts (calls tools), observes results.  
-**Best for:** Multi-step problems needing external lookups.  
-**File:** `backend/reasoning/react_reasoner.py`
-
-### 5. 🔹 Tree of Thoughts
-**How it works:** Explores multiple reasoning branches, picks the best.  
-**Best for:** Ambiguous problems with multiple valid approaches.  
-**File:** `backend/reasoning/tree_of_thoughts_reasoner.py`
-
-### 6. 🔹 LLM Fallback (Gemini)
-**How it works:** Directly queries Gemini API for open-ended queries.  
-**Best for:** Novel or unrecognized queries.  
-**File:** `backend/services/gemini_service.py`
-
----
